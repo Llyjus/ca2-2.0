@@ -1,0 +1,94 @@
+:root{
+    font-size: 24px;
+}
+
+html{
+    background-color:rgb(74, 74, 74);
+    width: 100%;
+}
+
+nav {
+    background-color: rgb(59, 0, 91);
+    display: flex;
+    flex-direction:row;
+    position:fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    align-items: center;
+    z-index: 100;
+}
+
+nav a {
+    color: rgb(255, 0, 217); 
+    text-align: center;
+    flex-grow:1;
+    border: 1px solid whitesmoke;
+
+}
+
+h1{
+    font-size: 72px;
+    text-align: center;
+    margin-top: 142px;
+    margin-bottom: 72px;
+    color: rgb(178, 0, 0); 
+}
+
+
+
+form{
+    font-size: 24px;
+    text-align: center;
+}
+
+
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 20%;
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: center;
+    right:0;
+    background-color: rgb(97, 0, 252);
+    border: 2px solid yellow;
+    color: rgb(11, 0, 106); 
+}
+
+#quote{
+
+    display: flex;
+    flex-direction: row-reverse;
+    right: 0%;
+    font-size: 16px;
+}
+a{
+    color: #fffb00;
+}
+
+#quo{
+    color: #2fff00;
+    margin-left: 3em;
+}
+
+#intro{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+    color: #b700ff;
+}
+
+#leader{
+    display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #b700ff;
+}
+
+th, tr{
+    text-align: center;
+    padding: 15px;
+
+}

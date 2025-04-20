@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Knight's Dungeon</title>
+        <link rel="stylesheet" href="../static/style.css"/>
+    </head>
+    <body>
+        <nav>
+            <a href="{{url_for('index')}}">
+                <p class='nav'>Home</p>
+            </a>
+
+            <a href="{{url_for('introduction')}}">
+                <p class="'nav">Introduction</p>
+            </a>
+
+            <a href="{{url_for('leaderboard')}}">
+                <p class='nav'>Leader Board</p>
+            </a>
+
+            <a href="{{url_for('choose')}}">
+                <p class='nav'>play</p>
+            </a>
+        </nav>
+        
+        {% block main_content %}
+        {% endblock %}
+        <footer>
+            <p id="footer">all rights kept by Yilin Wu o_o</p>
+        </footer>
+    </body>
+</html>

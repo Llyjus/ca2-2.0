@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+</head>
+
+<body>
+    <h1>
+        LEADER BOARD
+    </h1>
+    <div id="leader">
+        {% if leaders %}
+        <table>
+            <tr>
+                <th>
+                    Ranking
+                </th>
+                <th>
+                    Gamer
+                </th>
+                <th>
+                    Character
+                </th>
+                <th>
+                    Reached floor
+                </th>
+            </tr>
+            <tr>
+                {% for leader in leaders %}
+                <td>{{ loop.index }}</td>
+                <td>{{ leader.gamer }}</td>
+                <td>{{ leader.character }}</td>
+                <td>{{ leader.reached_floor }}</td>
+            </tr>
+            {% endfor %}
+        </table>
+        {% if leaders|length == 10 %}
+        <p>
+            Only show top 10 records. 
+        </p>
+        {% endif %}
+        <br>
+        <p>
+            This is all played by human, NO FAKE DATA!!!
+        </p>
+        {% else %}
+        <p>
+            Nobody here. Are you the first?
+        </p>
+        {% endif %}
+    </div>
+</body>
+
+</html>
+{% endblock %}

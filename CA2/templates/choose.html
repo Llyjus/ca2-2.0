@@ -1,0 +1,79 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+
+    <h1>choose a character</h1>
+
+    <a href="{{ url_for('knight') }}">
+        <div id="knight">
+            <h2>knight</h2>
+    </a>
+    <p>Always play a initial role in game.</p>
+    <p>
+        HP: high <br>
+        weapon: classic sword<br>
+        speed: medium<br>
+        skill: slashing!(long range)
+    </p>
+    </div>
+
+    <a href="{{ url_for('warrior') }}">
+        <div id="warrior">
+            <h2>warrior</h2>
+    </a>
+    <p>Loving his armour so much that never take them off(even sleeping).</p>
+    <p>
+        HP: very high <br>
+        weapon: shield(is that right?)<br>
+        speed: very low<br>
+        skill: Brutal rushing!
+    </p>
+
+    <a href="{{ url_for('mage') }}">
+        <div id="mage">
+            <h2>mage</h2>
+    </a>
+    <p>if you call him flame juggler, plz be careful of your hair.</p>
+    <p>
+        HP: low <br>
+        weapon: staff(fire balls getting ready!)<br>
+        speed: medium<br>
+        skill: Meteorite falling!
+    </p>
+
+    <a href="{{ url_for('priest') }}">
+        <div id="priest">
+            <h2>priest</h2>
+    </a>
+    <p>Purifier.(do not call him killer!!!)</p>
+    <p>
+        HP: very low <br>
+        weapon: holy scripture(shinning brightly)<br>
+        speed: low<br>
+        skill: Healing(passive)
+    </p>
+
+    <a href="{{ url_for('assassin') }}">
+        <div id="assassin">
+            <h2>assassin</h2>
+    </a>
+    <p>Hat Man.</p>
+    <p>
+        HP: low <br>
+        weapon: unblemished dagger<br>
+        speed: high<br>
+        skill: assassinating
+    </p>
+    <a href="{{ url_for('hunter') }}">
+        <div id="hunter">
+            <h2>hunter</h2>
+    </a>
+    <p>Hunter will use his gun to shut'em up!</p>
+    <p>
+        HP: medium <br>
+        weapon: shotgun<br>
+        speed: medium<br>
+        skill: bullets scatter
+    </p>
+    </div>
+{% endblock %}

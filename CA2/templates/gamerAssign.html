@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block main_content %}
+<header>
+    <h1>
+        Enter Your Nickname
+    </h1>
+</header>
+<main>
+    <form action="" method="POST" novalidate>
+        {{ form.hidden_tag() }}
+        {{ form.gamer.label }}
+        <br >
+        {{ form.gamer() }}
+        <br >
+        {% for error in form.gamer.errors %}
+            {{ error }}
+        {% endfor %}
+        <br >
+        {{ form.submit() }}
+    </form>
+</main>     
+
+{% endblock %}
